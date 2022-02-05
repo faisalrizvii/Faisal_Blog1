@@ -11,8 +11,9 @@ from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 from flask_gravatar import Gravatar
 from os import environ
 
+secret_keys = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 app = Flask(__name__)
-app.config['SECRET_KEY'] = environ.get('8BYkEfBA6O6donzWlSihBXox7C0sKR6b')
+app.config['SECRET_KEY'] = environ.get(secret_keys)
 ckeditor = CKEditor(app)
 Bootstrap(app)
 
