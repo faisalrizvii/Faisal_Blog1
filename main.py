@@ -13,7 +13,7 @@ from os import environ
 
 secret_keys = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 app = Flask(__name__)
-app.config['SECRET_KEY'] = environ.get(secret_keys)
+app.config['SECRET_KEY'] = secret_keys
 ckeditor = CKEditor(app)
 Bootstrap(app)
 
